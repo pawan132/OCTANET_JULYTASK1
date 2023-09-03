@@ -73,6 +73,22 @@
    
    }
 
+   .leftSection .buttons{
+    padding: 43px -12px;
+   }
+   .leftSection .btn{
+  
+    padding: 12px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+   
+   }
+
+
    .rightSection img{
     width: 80%;
     
@@ -93,7 +109,10 @@
    .secondSection{
     max-width: 80vw;
     margin: auto;
-    height: 80vh;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    }
 
    .secondSection h1{
@@ -112,7 +131,7 @@
     height: 93px;
     width: 1px;
     background-color: white;
-    margin: 0 120px;
+    margin: 0 6vw;
    }
 
    .image-top{
@@ -129,13 +148,101 @@
 
    
     .vertical-desc{
-       position: relative;
-       top: 86px;
-       color: gray;
-       width: 150px;
-       font-size: 9px;
+        position: relative;
+    top: 42px;
+    color: #2851ce;
+    width: 150px;
+    font-size: 15px;
+    }
+     footer{
+        background-color: rgb(169 45 187);
+        /* height: 233px; */
+     }
+    .footer{
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+    }
+
+    .footer ul{
+        list-style: none;
+    }
+
+    .footer > div{
+        width: 223px;
     }
    
+    footer .footer-rights{
+        text-align: center;
+        color:  #2cd613;
+        padding: 12px 0;
+
+    }
+    
+  
+   
+      @media screen and (max-width: 1400px){
+        /* body{
+            background-color: red; 
+        } */
+        .box{
+            flex-direction: column;
+        }
+        .secondSection .vertical{
+            height: unset;
+        }
+
+        .secondSection .box{
+            width: 50vw;
+        }
+
+        nav{
+            flex-direction: column;
+        }
+        .vertical-title, .vertical-desc{
+            left: 45px;
+        }
+        .firstSection{
+            flex-direction: column-reverse;
+        }
+        footer{
+            /* display: none; */
+            height: 80vh;
+            margin-top: 80px;
+        }
+       .leftSection{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+        .rightSection{
+            width: 411px !important;
+             display: flex;
+            justify-content: center; 
+        }
+         .secondSection{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 80vw;
+            margin: auto;
+            height: 141vh;
+         }
+        .rightSection img{
+            width: 45vw;
+            margin-bottom: 73px;
+        }
+        body{
+            min-width: fit-content;
+        }
+
+        .image-top{
+        top: 122px;
+    }
+    }  
+    
     </style>
 </head>
 <body>
@@ -160,13 +267,17 @@
 <main>
     <section class="firstSection">
         <div class="leftSection">
-           Hi, My name is <span class="purple">Pawan</span>
+           <div>Hi, My name is <span class="purple">Pawan</span></div>
            
            <div>
             and I am a Passionate
            </div>
         
            <span id="element"></span>
+           <div class="buttons">
+             <button class="btn">Download Resume</button>
+             <button class="btn">Visit Github</button>
+           </div>
         </div>
 
         <div class="rightSection">
@@ -182,64 +293,71 @@
        <h1>Work Experience</h1>
        <div class="box" >
         <div class="vertical">
-            <img class="image-top" src="developer.png" alt="">
+            <img class="image-top" src="kiet.png" alt="">
             <div class="vertical-title">
-                Html Developer
+                web Development
             </div>
+            <span>
+                (July2021-sep2021)
+            </span>
             <div class="vertical-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Distinctio voluptatum quidem nobis quod quasi aperiam id, 
-                eaque consequuntur odio debitis? Quia corporis recusandae 
-                sunt ab quidem nesciunt, reiciendis pariatur maxime?
+                Mini Project internship by IIPC KIET
+                    
             </div>
         </div>
         <div class="vertical">
-            <img class="image-top" src="node.png" alt="">
+            <img class="image-top" src="kiet.png" alt="">
             <div class="vertical-title">
-                Node.js Developer
+                Web Development
             </div>
+            <span> 
+                (Aug2022-sep2022)
+            </span>
             <div class="vertical-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Distinctio voluptatum quidem nobis quod quasi aperiam id, 
-                eaque consequuntur odio debitis? Quia corporis recusandae 
-                sunt ab quidem nesciunt, reiciendis pariatur maxime?
+               Summer internship by IIPC KIET
             </div>
         </div>
         <div class="vertical">
-            <img class="image-top" src="react.png" alt="">
+            <img class="image-top" src="oasis infobyte.png" alt="">
             <div class="vertical-title">
-                React Developer
+                web Developmet
             </div>
+            <span>
+                (Mar2023-Apr2023)
+            </span>
             <div class="vertical-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Distinctio voluptatum quidem nobis quod quasi aperiam id, 
-                eaque consequuntur odio debitis? Quia corporis recusandae 
-                sunt ab quidem nesciunt, reiciendis pariatur maxime?
+                Oasis infobyte Internship
+                1.Tribute Page
+                2.to-do-list
+                3.calculator
             </div>
         </div>
         <div class="vertical">
-            <img class="image-top" src="mongodb.png" alt="">
+            <img class="image-top" src="octanet.png" alt="">
             <div class="vertical-title">
-                MongoDb Developer
+                Web Development
             </div>
+            <span>
+                (Jul2023-Aug2023)
+            </span>
             <div class="vertical-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Distinctio voluptatum quidem nobis quod quasi aperiam id, 
-                eaque consequuntur odio debitis? Quia corporis recusandae 
-                sunt ab quidem nesciunt, reiciendis pariatur maxime?
+                Octanet Internship
+                1.Landing Page
+                2.To-do-List 
+                3.social media clone
             </div>
         </div>
      
         <div class="vertical">
-            <img class="image-top" src="flutter.jpg" alt="">
+            <img class="image-top" src="coursera.png" alt="">
             <div class="vertical-title">
-                flutter Developer
+                Algorithmic toolbox
             </div>
+            <span>
+                (Jun2022-Aug2022)
+            </span>
             <div class="vertical-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Distinctio voluptatum quidem nobis quod quasi aperiam id, 
-                eaque consequuntur odio debitis? Quia corporis recusandae 
-                sunt ab quidem nesciunt, reiciendis pariatur maxime?
+                coursera 40 hours course
             </div>
         </div>
        
@@ -248,6 +366,47 @@
     </section>
 </main>
 
+
+<footer>
+    <div class="footer">
+        <div class="footer-first">
+            <h3>Pawan Developer Portfolio </h3>
+        </div>
+        <div class="footer-second">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Project</li>
+                <li>Contact me</li>
+                
+            </ul>
+        </div>
+        <div class="footer-third">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Project</li>
+                <li>Contact me</li>
+                
+            </ul>
+        </div>
+        <div class="footer-fourth">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Project</li>
+                <li>Contact me</li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="footer-rights">
+       Copyright  &#169; www.Pawanportfolio.com | All rights reserved
+    </div>
+</footer>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
 <script>
